@@ -21,25 +21,32 @@
   <!-- Header fim -->
 
   <!-- Main -->
-  <main class="main">
-    <h1>Pedido #1</h1>
+  <main class="main container">
+    <h1 class="title-pedido">Pedido #1</h1>
     <!-- Registrar sessão dos cards -->
     <section class="section-contrato">
-      <h2>Lead: Documento para criar contato</h2>
 
-      <p><span class="observacoes">Observações:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet corporis nesciunt tempora exercitationem natus! Quam sint qui totam fugit? Officiis repellendus, excepturi quas ducimus cum in fuga maiores expedita a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, voluptatem animi. Dolore repellat consequuntur suscipit dolores quasi, non, aperiam nobis ab, repudiandae autem iste sit? Sint culpa ipsam at officia.</p>
+      <h2 class="subtitle-criar-doc">Lead: Documento para criar contato</h2>
 
-      <p><span class="autor-criacao">Criado por: João da Silva</span></p>
+      <div class="observacoes">
+        <p><span >Observações:</span>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illo nam accusamus debitis maxime quae nesciunt aperiam voluptas, sequi iste accusantium voluptatum sint voluptate minus numquam consectetur voluptates possimus tempore.
+        </p>
+      </div>
 
-      <p><span class="data-criacao">Data de criação:</span></p>
+      <div class="informacao">
+        <p class="autor"><span>Criado por: </span>João da Silva</p>
+        <p><span>Data de criação:</span></p>
+      </div>
 
     </section>
 
     <section class="section-registro">
-      <h2 class="section-title-pedido">Adicionar documentos ao pedido</h2>
 
       <!-- form -->
-      <form>
+      <form class="form">
+        <h2 class="section-title-pedido">Adicionar documentos ao pedido</h2>
+        <div class="divisao"></div>
         <div>
           <label>Nome do documento:</label>
           <input type="text" placeholder="Digite o documento">
@@ -63,7 +70,7 @@
           <input type="text" placeholder="Digite seu nome">
         </div>
 
-        <p><span>Dados do cartório</span></p>
+        <p class="dados-cartorio"><span>Dados do cartório</span></p>
 
         <div>
           <label>CEP:</label>
@@ -80,7 +87,7 @@
           <input type="text" placeholder="Digite a cidade">
         </div>
 
-        <button class="btn-documento">Criar documento</button>
+        <input type="submit" class="btn-documento" value="Criar documento" />
 
 
       </form>
@@ -106,7 +113,7 @@
     <p>DOCKET &copy 2022</p>
   </footer>
 
-
+  <script src="src/js/main.js"></script>
 
 </body>
 </html>
