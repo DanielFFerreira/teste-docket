@@ -41,110 +41,119 @@
 
     </section>
 
-    <section class="section-registro">
+    <div class="registro-container">
+      <section class="section-registro">
 
-      <!-- form -->
-      <form class="form">
-        <h2 class="section-title-pedido">Adicionar documentos ao pedido</h2>
+        <!-- form -->
+        <form class="form">
+          <h2 class="section-title-pedido">Adicionar documentos ao pedido</h2>
 
-        <div class="divisao"></div>
+          <div class="divisao"></div>
 
-        <div>
-          <label>
-            <span class="required-symbol">*</span>
-            Nome do documento:
-          </label>
-          <input type="text" class="border-error" placeholder="Digite o documento" required>
-          <small class="error-menssage">Campo obrigatório</small>
-        </div>
+          <div>
+            <label>
+              <span class="required-symbol">*</span>
+              Nome do documento:
+            </label>
+            <input 
+            id="nome-documento"
+            type="text" 
+            class="border-error" 
+            placeholder="Digite o documento" 
+            pattern="[a-zA-Záãâéêíîóôõú\s]+$"
+            required
+            >
+            <small class="error-menssage">Campo obrigatório</small>
+          </div>
 
-        <div>
-          
-          <label>
-            <span class="required-symbol">*</span>
-            Tipo de documento:
-          </label>
-          <select name="type" id="type">
-            <option value="1">Pessoa Física</option>
-            <option value="1">Pessoa Jurídica</option>
-          </select>
-        </div>
-
-        <div>
-          <label>
-            <span class="required-symbol">*</span>
-            CPF:
-          </label>
-          <input type="text" class="border-error" placeholder="Digite seu cpf" required>
-          <small class="error-menssage">Campo obrigatório</small>
-        </div>
-
-        <div>
-          <label>
-            <span class="required-symbol">*</span>
-            Nome Completo:
-          </label>
-          <input type="text" class="border-error" placeholder="Digite seu nome" required>
-          <small class="error-menssage">Campo obrigatório</small>
-        </div>
-
-        <div class="dados-cartorio">
-          <p><span>Dados do cartório</span></p>
-
-          <label>
-            <span class="required-symbol">*</span>
-            CEP:
-          </label>
-          <input class="cep border-error" type="text" placeholder="Digite o cep" required>
-          <small class="error-menssage">Campo obrigatório</small>
-
-          <div class="endereco-wrapper">
-            <div>
-              <label>
-                <span class="required-symbol">*</span>
-                Rua:
-              </label>
-              <input class="rua border-error" type="text" placeholder="Digite a sua rua" required>
-              <small class="error-menssage">Campo obrigatório</small>
+          <div>
             
-              <label>
-                <span class="required-symbol">*</span>
-                Cidade:
-              </label>
-              <input class="cidade border-error" type="text" placeholder="Digite a cidade" required>
-              <small class="error-menssage">Campo obrigatório</small>
+            <label>
+              <span class="required-symbol">*</span>
+              Tipo de documento:
+            </label>
+            <select name="type" id="type">
+              <option value="1">Pessoa Física</option>
+              <option value="1">Pessoa Jurídica</option>
+            </select>
+          </div>
+
+          <div>
+            <label>
+              <span class="required-symbol">*</span>
+              CPF:
+            </label>
+            <input type="text" class="border-error" placeholder="Digite seu cpf" required>
+            <small class="error-menssage">Campo obrigatório</small>
+          </div>
+
+          <div>
+            <label>
+              <span class="required-symbol">*</span>
+              Nome Completo:
+            </label>
+            <input type="text" class="border-error" placeholder="Digite seu nome" required>
+            <small class="error-menssage">Campo obrigatório</small>
+          </div>
+
+          <div class="dados-cartorio">
+            <p><span>Dados do cartório</span></p>
+
+            <label>
+              <span class="required-symbol">*</span>
+              CEP:
+            </label>
+            <input class="cep border-error" type="text" placeholder="Digite o cep" required>
+            <small class="error-menssage">Campo obrigatório</small>
+
+            <div class="endereco-wrapper">
+              <div>
+                <label>
+                  <span class="required-symbol">*</span>
+                  Rua:
+                </label>
+                <input class="rua border-error" type="text" placeholder="Digite a sua rua" required>
+                <small class="error-menssage">Campo obrigatório</small>
+              
+                <label>
+                  <span class="required-symbol">*</span>
+                  Cidade:
+                </label>
+                <input class="cidade border-error" type="text" placeholder="Digite a cidade" required>
+                <small class="error-menssage">Campo obrigatório</small>
+              </div>
+              <div>
+                <label>
+                  <span class="required-symbol">*</span>
+                  Número:
+                </label>
+                <input class="numero border-error" type="text" placeholder="Digite o número" required>
+                <small class="error-menssage">Campo obrigatório</small>
+
+                <label>
+                  <span class="required-symbol">*</span>
+                  UF:
+                </label>
+                <input class="uf border-error" type="text" placeholder="Digite UF" required>
+                <small class="error-menssage">Campo obrigatório</small>
             </div>
-            <div>
-              <label>
-                <span class="required-symbol">*</span>
-                Número:
-              </label>
-              <input class="numero border-error" type="text" placeholder="Digite o número" required>
-              <small class="error-menssage">Campo obrigatório</small>
+            </div>
 
-              <label>
-                <span class="required-symbol">*</span>
-                UF:
-              </label>
-              <input class="uf border-error" type="text" placeholder="Digite UF" required>
-              <small class="error-menssage">Campo obrigatório</small>
-          </div>
           </div>
 
+          <input type="submit" class="btn-documento" value="Criar documento" />
+
+        </form>
+
+      </section>
+
+      <section class="empty-container">
+        <div class="empty-content">
+          <img src="src/img/empty.svg" alt="imagem empty">
+          <p class="empty-doc">Nenhum documento criado</p>
         </div>
-
-        <input type="submit" class="btn-documento" value="Criar documento" />
-
-
-      </form>
-
-
-    </section>
-
-    <section class="container">
-
-    </section>
-
+      </section>
+    </div>
   </main>
 
 

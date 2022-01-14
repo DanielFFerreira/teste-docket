@@ -47,6 +47,11 @@ input:invalid {
   margin: 1.5rem 0;
 }
 
+.registro-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .section-contrato {
   box-shadow: 0px 1px 2px #2E2D2C66;
   border-radius: 4px;
@@ -75,58 +80,61 @@ input:invalid {
   font-weight: bold;
 }
 
-.form {
+.section-registro {
+  width: 41%;
+}
+.section-registro .form {
   max-width: 570px;
   background: #ffffff;
   padding: 1.5rem;
   box-shadow: 0px 1px 2px #2E2D2C66;
 }
-.form .required-symbol {
+.section-registro .form .required-symbol {
   color: #e65562;
 }
-.form .error-menssage {
+.section-registro .form .error-menssage {
   display: block;
   min-height: 1.25rem;
   margin-bottom: 1.25rem;
   color: #e65562;
 }
-.form .divisao {
+.section-registro .form .divisao {
   border-bottom: 1px solid #c4c8cc;
 }
-.form .section-title-pedido {
+.section-registro .form .section-title-pedido {
   font-weight: 700;
   font-size: 1.5rem;
   margin-bottom: 1.25rem;
   width: 100%;
   font-weight: 600;
 }
-.form label {
+.section-registro .form label {
   margin-top: 1.2rem;
 }
-.form select {
+.section-registro .form select {
   width: 256px;
   height: 40px;
   border: 1px solid #ababab;
   border-radius: 2px;
 }
-.form label {
+.section-registro .form label {
   display: block;
   font-size: 0.875rem;
   margin-bottom: 0.275rem;
 }
-.form input {
+.section-registro .form input {
   width: 100%;
   border: 1px solid #ababab;
   border-radius: 2px;
   height: 40px;
 }
-.form input::placeholder {
+.section-registro .form input::placeholder {
   padding-left: 14px;
 }
-.form .border-error {
+.section-registro .form .border-error {
   border-color: #e65562;
 }
-.form input[type=submit] {
+.section-registro .form input[type=submit] {
   background-color: #3570b2;
   color: #ffffff;
   border: none;
@@ -138,22 +146,22 @@ input:invalid {
   cursor: pointer;
   margin-top: 2.1rem;
 }
-.form .dados-cartorio .cep {
+.section-registro .form .dados-cartorio .cep {
   width: 176px;
 }
-.form .dados-cartorio .endereco-wrapper {
+.section-registro .form .dados-cartorio .endereco-wrapper {
   display: flex;
   justify-content: space-between;
 }
-.form .dados-cartorio .endereco-wrapper .rua,
-.form .dados-cartorio .endereco-wrapper .cidade {
+.section-registro .form .dados-cartorio .endereco-wrapper .rua,
+.section-registro .form .dados-cartorio .endereco-wrapper .cidade {
   width: 324px;
 }
-.form .dados-cartorio .endereco-wrapper .numero,
-.form .dados-cartorio .endereco-wrapper .uf {
+.section-registro .form .dados-cartorio .endereco-wrapper .numero,
+.section-registro .form .dados-cartorio .endereco-wrapper .uf {
   width: 130px;
 }
-.form .dados-cartorio p {
+.section-registro .form .dados-cartorio p {
   font-weight: bold;
   margin-top: 2.5rem;
 }
@@ -168,8 +176,34 @@ input:invalid {
   margin-top: 3.125rem;
 }
 
+.empty-container {
+  width: 750px;
+  height: 349px;
+  background: #ffffff;
+  display: flex;
+  box-shadow: 0px 1px 2px #2E2D2C66;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.empty-container img {
+  width: 56px;
+  height: 56px;
+  display: block;
+  margin: 0 auto;
+}
+.empty-container .empty-doc {
+  color: #828180;
+  margin-top: 1.2rem;
+}
+
 @media (max-width: 580px) {
   .endereco-wrapper {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1280px) {
+  .registro-container {
     flex-wrap: wrap;
   }
 }

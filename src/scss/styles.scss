@@ -5,6 +5,7 @@ $black100: #2e2d2c;
 $white: #ffffff;
 $black02: #f3f3f3;
 $black-40: #ababab;
+$black-60: #828180;
 $red-01: #e65562;
 $blue-01: #3570b2;
 $cold-grey-10: #ebf0f5;
@@ -66,6 +67,11 @@ input:invalid {
   margin: 1.5rem 0;
 }
 
+.registro-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 // formulários
 .section-contrato {
   box-shadow: 0px 1px 2px #2E2D2C66;
@@ -100,104 +106,109 @@ input:invalid {
   }
 }
 
-// formulario
-.form {
-  max-width: 570px;
-  background: $white;
-  padding: 1.5rem;
-  box-shadow: 0px 1px 2px #2E2D2C66;
+.section-registro {
+  width: 41%;
 
-  .required-symbol {
-    color: $red-01;
-  }
 
-  .error-menssage {
-    display: block;
-    min-height: 1.25rem;
-    margin-bottom: 1.25rem;
-    color: $red-01;
-  }
+  // formulario
+  .form {
+    max-width: 570px;
+    background: $white;
+    padding: 1.5rem;
+    box-shadow: 0px 1px 2px #2E2D2C66;
 
-  .divisao {
-    border-bottom: 1px solid $cold-grey-40;
-  }
-
-  .section-title-pedido {
-    font-weight: 700;
-    font-size: 1.5rem;
-    margin-bottom: 1.25rem;
-    width: 100%;
-    font-weight: 600;
-  }
-
-  label {
-    margin-top: 1.2rem;
-  }
-
-  select {
-    width: 256px;
-    height: 40px;
-    border: 1px solid $black-40;
-    border-radius: 2px;
-  }
-
-  label {
-    display: block;
-    font-size: 0.875rem;
-    margin-bottom: 0.275rem;
-  }
-
-  input {
-    width: 100%;
-    border: 1px solid $black-40;
-    border-radius: 2px;
-    height: 40px;
-
-    &::placeholder {
-      padding-left: 14px;
-    }
-  }
-
-  .border-error {
-    border-color: $red-01;
-  }
-
-  input[type='submit'] {
-    background-color: $blue-01;
-    color: $white;
-    border: none;
-    padding: 0.563rem 1.25rem;
-    width: fit-content;
-    border-radius: 16px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    margin-top: 2.1rem;
-  }
-  .dados-cartorio {
-    
-    .cep {
-      width: 176px;
+    .required-symbol {
+      color: $red-01;
     }
 
-    .endereco-wrapper {
-      display: flex;
-      justify-content: space-between;
+    .error-menssage {
+      display: block;
+      min-height: 1.25rem;
+      margin-bottom: 1.25rem;
+      color: $red-01;
+    }
+
+    .divisao {
+      border-bottom: 1px solid $cold-grey-40;
+    }
+
+    .section-title-pedido {
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+      width: 100%;
+      font-weight: 600;
+    }
+
+    label {
+      margin-top: 1.2rem;
+    }
+
+    select {
+      width: 256px;
+      height: 40px;
+      border: 1px solid $black-40;
+      border-radius: 2px;
+    }
+
+    label {
+      display: block;
+      font-size: 0.875rem;
+      margin-bottom: 0.275rem;
+    }
+
+    input {
+      width: 100%;
+      border: 1px solid $black-40;
+      border-radius: 2px;
+      height: 40px;
+
+      &::placeholder {
+        padding-left: 14px;
+      }
+    }
+
+    .border-error {
+      border-color: $red-01;
+    }
+
+    input[type='submit'] {
+      background-color: $blue-01;
+      color: $white;
+      border: none;
+      padding: 0.563rem 1.25rem;
+      width: fit-content;
+      border-radius: 16px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 2.1rem;
+    }
+    .dados-cartorio {
       
-      .rua,
-      .cidade {
-        width: 324px;
+      .cep {
+        width: 176px;
       }
 
-      .numero,
-      .uf {
-        width: 130px;
-      }
-    }
+      .endereco-wrapper {
+        display: flex;
+        justify-content: space-between;
+        
+        .rua,
+        .cidade {
+          width: 324px;
+        }
 
-    p {
-      font-weight: bold;
-      margin-top: 2.5rem;
+        .numero,
+        .uf {
+          width: 130px;
+        }
+      }
+
+      p {
+        font-weight: bold;
+        margin-top: 2.5rem;
+      }
     }
   }
 }
@@ -212,8 +223,38 @@ input:invalid {
   margin-top: 3.125rem;
 }
 
+.empty-container {
+  width: 750px;
+  height: 349px;
+  background: $white;
+  display: flex;
+  box-shadow: 0px 1px 2px #2E2D2C66;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 56px;
+    height: 56px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .empty-doc {
+    color: $black-60;
+    margin-top: 1.2rem;
+  }
+}
+
 @media (max-width: 580px) {
   .endereco-wrapper {
     flex-wrap: wrap;
   }
+}
+
+@media (max-width: 1280px) {
+  .registro-container {
+    flex-wrap: wrap;
+  }
+  
 }
