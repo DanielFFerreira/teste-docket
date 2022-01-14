@@ -20,6 +20,10 @@ input::placeholder {
   color: #ababab;
 }
 
+input:invalid {
+  border-color: #e65562;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -72,10 +76,19 @@ input::placeholder {
 }
 
 .form {
-  max-width: 530px;
+  max-width: 570px;
   background: #ffffff;
   padding: 1.5rem;
   box-shadow: 0px 1px 2px #2E2D2C66;
+}
+.form .required-symbol {
+  color: #e65562;
+}
+.form .error-menssage {
+  display: block;
+  min-height: 1.25rem;
+  margin-bottom: 1.25rem;
+  color: #e65562;
 }
 .form .divisao {
   border-bottom: 1px solid #c4c8cc;
@@ -110,6 +123,9 @@ input::placeholder {
 .form input::placeholder {
   padding-left: 14px;
 }
+.form .border-error {
+  border-color: #e65562;
+}
 .form input[type=submit] {
   background-color: #3570b2;
   color: #ffffff;
@@ -122,9 +138,40 @@ input::placeholder {
   cursor: pointer;
   margin-top: 2.1rem;
 }
-.form .dados-cartorio {
+.form .dados-cartorio .cep {
+  width: 176px;
+}
+.form .dados-cartorio .endereco-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.form .dados-cartorio .endereco-wrapper .rua,
+.form .dados-cartorio .endereco-wrapper .cidade {
+  width: 324px;
+}
+.form .dados-cartorio .endereco-wrapper .numero,
+.form .dados-cartorio .endereco-wrapper .uf {
+  width: 130px;
+}
+.form .dados-cartorio p {
   font-weight: bold;
   margin-top: 2.5rem;
+}
+
+.footer {
+  padding: 1.375rem 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #fff;
+  background: transparent linear-gradient(153deg, #5a5789 0%, #2d2c45 100%) 0% 0% no-repeat padding-box;
+  margin-top: 3.125rem;
+}
+
+@media (max-width: 580px) {
+  .endereco-wrapper {
+    flex-wrap: wrap;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

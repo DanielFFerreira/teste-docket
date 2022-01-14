@@ -46,14 +46,24 @@
       <!-- form -->
       <form class="form">
         <h2 class="section-title-pedido">Adicionar documentos ao pedido</h2>
+
         <div class="divisao"></div>
+
         <div>
-          <label>Nome do documento:</label>
-          <input type="text" placeholder="Digite o documento">
+          <label>
+            <span class="required-symbol">*</span>
+            Nome do documento:
+          </label>
+          <input type="text" class="border-error" placeholder="Digite o documento" required>
+          <small class="error-menssage">Campo obrigatório</small>
         </div>
 
         <div>
-          <label>Tipo de documento:</label>
+          
+          <label>
+            <span class="required-symbol">*</span>
+            Tipo de documento:
+          </label>
           <select name="type" id="type">
             <option value="1">Pessoa Física</option>
             <option value="1">Pessoa Jurídica</option>
@@ -61,30 +71,66 @@
         </div>
 
         <div>
-          <label>CPF:</label>
-          <input type="text" placeholder="Digite seu cpf">
+          <label>
+            <span class="required-symbol">*</span>
+            CPF:
+          </label>
+          <input type="text" class="border-error" placeholder="Digite seu cpf" required>
+          <small class="error-menssage">Campo obrigatório</small>
         </div>
 
         <div>
-          <label>Nome Completo:</label>
-          <input type="text" placeholder="Digite seu nome">
+          <label>
+            <span class="required-symbol">*</span>
+            Nome Completo:
+          </label>
+          <input type="text" class="border-error" placeholder="Digite seu nome" required>
+          <small class="error-menssage">Campo obrigatório</small>
         </div>
 
-        <p class="dados-cartorio"><span>Dados do cartório</span></p>
+        <div class="dados-cartorio">
+          <p><span>Dados do cartório</span></p>
 
-        <div>
-          <label>CEP:</label>
-          <input type="text" placeholder="Digite o cep">
-        </div>
+          <label>
+            <span class="required-symbol">*</span>
+            CEP:
+          </label>
+          <input class="cep border-error" type="text" placeholder="Digite o cep" required>
+          <small class="error-menssage">Campo obrigatório</small>
 
-        <div>
-          <label>Rua:</label>
-          <input type="text" placeholder="Digite a sua rua">
-        </div>
+          <div class="endereco-wrapper">
+            <div>
+              <label>
+                <span class="required-symbol">*</span>
+                Rua:
+              </label>
+              <input class="rua border-error" type="text" placeholder="Digite a sua rua" required>
+              <small class="error-menssage">Campo obrigatório</small>
+            
+              <label>
+                <span class="required-symbol">*</span>
+                Cidade:
+              </label>
+              <input class="cidade border-error" type="text" placeholder="Digite a cidade" required>
+              <small class="error-menssage">Campo obrigatório</small>
+            </div>
+            <div>
+              <label>
+                <span class="required-symbol">*</span>
+                Número:
+              </label>
+              <input class="numero border-error" type="text" placeholder="Digite o número" required>
+              <small class="error-menssage">Campo obrigatório</small>
 
-        <div>
-          <label>Cidade:</label>
-          <input type="text" placeholder="Digite a cidade">
+              <label>
+                <span class="required-symbol">*</span>
+                UF:
+              </label>
+              <input class="uf border-error" type="text" placeholder="Digite UF" required>
+              <small class="error-menssage">Campo obrigatório</small>
+          </div>
+          </div>
+
         </div>
 
         <input type="submit" class="btn-documento" value="Criar documento" />
@@ -95,15 +141,9 @@
 
     </section>
 
-    <section class="">
+    <section class="container">
 
     </section>
-
-
-
-
-
-
 
   </main>
 
