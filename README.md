@@ -35,4 +35,4 @@ bash npm run dev
 ```
 
 ### Executando o projeto
-1. Abra a index.html com o live server no seu VSCod
+1. Abra a index.html com o live server no seu VSCode
