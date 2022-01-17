@@ -18,9 +18,9 @@ https://teste-docket-q4zgxuo0p-danielfreitasferreira.vercel.app/
 1. Baixe ou clone o repositótio
 2. Execute comando npm init -y para criar arquivo package.json
 3. Instale as dependencias com ```npm install``` 
-4. Instale o json-server usando o comando npm i json-server 
+4. Instale o json-server usando o comando ```npm i json-server``` 
 5. Para rodar o json-server 
-6. npm run dev
+6. ```npm run dev```
 
 ### Como usar
 1. Abra a index.html com o live server no seu VSCode
