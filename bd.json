@@ -1,3 +1,28 @@
 {
-  "document": []
+  "document": [
+    {
+      "doc_name": "Documento ficheiro",
+      "type": "Pessoa fisica",
+      "cpf": "999.999.999-00",
+      "name": "Pedro Gomes",
+      "cep": "01001000",
+      "street": "Pitangas",
+      "number": "69",
+      "city": "Bebedouro",
+      "uf": "SP",
+      "id": 1
+    },
+    {
+      "doc_name": "Certidao de nascimento",
+      "type": "Pessoa juridica",
+      "cpf": "999.999.999-00",
+      "name": "Katia Fonseca",
+      "cep": "14708-228",
+      "street": "Paraguai",
+      "number": "567",
+      "city": "São Gabriel",
+      "uf": "RS",
+      "id": 2
+    }
+  ]
 }
