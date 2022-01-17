@@ -12,7 +12,7 @@ Desafio para desenvolvedor front-end na Docket Brasil
 
 ## Baixando Dependências
 * Baixe o Visual Studio Code
-* Baxie a extensão Live Server no Visual Studio Code
+* Baixe a extensão Live Server no Visual Studio Code
 
 ## Baixando o Projeto
 1. Baixe ou clone o repositótio
