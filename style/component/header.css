@@ -1,0 +1,13 @@
+.header {
+    background: url("/asset/logo-background.png");
+    padding: 9px 0;
+}
+
+.container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.title-pedido {
+    padding: 1.3rem 0;
+}

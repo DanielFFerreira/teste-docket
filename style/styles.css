@@ -1,0 +1,15 @@
+@import "/style/component/cards.css";
+@import "/style/component/footer.css";
+@import "/style/component/header.css";
+@import "/style/component/modal.css";
+@import "/style/reset.css";
+@import "/style/variable.css";
+
+@media (max-width: 930px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+  .section-information {
+    width: 100%;
+  }
+}

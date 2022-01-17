@@ -12,53 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"> 
 
     <script src="src/indexController.js" type="module" defer></script>
-    <style>
-        #modal {
-            position: fixed;
-            padding: 15px;
-            width: 418px;
-            height: 30px;
-            left: 50%;
-            top: 62px;
-            left: 41rem;
-            border-radius: 5px;
-            box-shadow: 0px 2px 3px #00000029;
-            transform: translate(-50%, -50%);
-            background-color: #00B98E;
-            display: none;
-        }
-        #modal .modal-content {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            top: -5px;
-            position: absolute;
-            padding: 0 1rem;
-        }
-        #modal p {
-            text-align: center;
-            color: #ffffff;
-            font-family: 'Opens sans' sans-serif;
-            font-size: 1rem;
-            margin-left: 2rem;
-        }
-        #modal .icon-close {
-           margin-left: 6rem;
-        }
-
-        .visible {
-            display: block !important;
-        }
-    </style>
 </head>
-<body style="background-color: var(--background-color); min-height: 100vh; font-family: Open Sans, Regular;">
-    <div id="modal">
-        <div class="modal-content">
-            <img src="./asset/check.png" alt="">
-            <p>Documento cadastrado com sucesso!</p>
-            <img class="icon-close" src="./asset/close.png" alt="">
-        </div>
-    </div>
+<body>
 
     <header class="header">
         <div class="container">
@@ -71,7 +26,9 @@
     <main class="flex f-column gap1 px1">
         <section class="section-information px1">
             <h2>Lead: Documento para criar contrato</h2>
-            <p>Observação: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin commodo faucibus. Nullam ut pharetra turpis. Vestibulum molestie turpis ac tortor dapibus porttitor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam in elit vitae ligula consectetur hendrerit id id odio. Vestibulum volutpat gravida arcu sit amet tempus. In rhoncus leo vel dolor convallis gravida id a nulla.</p>
+
+            <p class="descricao">Observação: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin commodo faucibus. Nullam ut pharetra turpis. Vestibulum molestie turpis ac tortor dapibus porttitor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam in elit vitae ligula consectetur hendrerit id id odio. Vestibulum volutpat gravida arcu sit amet tempus. In rhoncus leo vel dolor convallis gravida id a nulla.</p>
+
             <footer class="flex gap3">
                 <p><strong>Criado por:</strong> João da Silva</p>
                 <p><strong>Data da criação:</strong> 11 de maio de 2021</p>
@@ -145,7 +102,7 @@
                 </form>
             </section>
 
-            <section id="list" class="flex f-column gap1 w100">
+            <section id="list" class="card-loading flex f-column gap1 w100">
                 <article class="flex f-column justify-content-center align-items-center gap1 py2 box">
                     Loading...
                 </article>
@@ -156,5 +113,14 @@
     <footer class="footer mt-2">
         <p class="p1 m0">DOCKET © 2021</p>
     </footer>
+
+    <div id="modal">
+        <div class="modal-content">
+            <img src="./asset/check.png" alt="">
+            <p>Documento cadastrado com sucesso!</p>
+            <img class="icon-close" src="./asset/close.png" alt="">
+        </div>
+    </div>
+
 </body>
 </html>
