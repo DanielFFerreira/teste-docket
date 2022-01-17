@@ -47,6 +47,18 @@
       "city": "Ribeirao",
       "uf": "sp",
       "id": 11
+    },
+    {
+      "doc_name": "fichario",
+      "type": "Pessoa fisica",
+      "cpf": "59595949494",
+      "name": "Fabiano",
+      "cep": "9856332",
+      "street": "Flores",
+      "number": "233",
+      "city": "Ribeirao",
+      "uf": "sp",
+      "id": 12
     }
   ]
 }
