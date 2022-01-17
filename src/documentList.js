@@ -4,7 +4,7 @@ import { append, el, txt } from "./utils.js";
 
 const render_empty = () => {
     return el(`
-        <article class="flex f-column justify-content-center align-items-center gap1 py2 box">
+        <article class="card-empty flex f-column justify-content-center align-items-center gap1 py2 box">
             <img src="asset/document.png" alt="">
             <p class="m0">Nenhum documento criado</p>
         </article>
