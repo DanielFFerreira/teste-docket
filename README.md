@@ -8,19 +8,31 @@ https://teste-docket-q4zgxuo0p-danielfreitasferreira.vercel.app/
 * HTML5
 * CSS3
 * Vanilla Javascript (ES6)
-* Markdown no readme
+* Markdown
 
-## Execulte o projeto
-* VSCode
-* Live Server (Extensão do Visual Code)
+## Baixando Dependências
+* Baixe o Visual Studio Code
+* Baxie a extensão Live Server no Visual Studio Code
 
-### Instação
+## Baixando o Projeto
 1. Baixe ou clone o repositótio
-2. Execute comando npm init -y para criar arquivo package.json
-3. Instale as dependencias com ```npm install``` 
-4. Instale o json-server usando o comando ```npm i json-server``` 
-5. Para rodar o json-server 
-6. ```npm run dev```
+```bash 
+git clone https://github.com/DanielFreitasFerreira/teste-docket.git
+```
 
-### Como usar
-1. Abra a index.html com o live server no seu VSCode
+2. Instale as dependências rodando: 
+
+```bash 
+npm install
+```
+
+### Executando Json-Server
+
+No terminal após instalar as dependências, rode: 
+
+```
+bash npm run dev
+```
+
+### Executando o projeto
+1. Abra a index.html com o live server no seu VSCod
