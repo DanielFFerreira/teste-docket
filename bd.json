@@ -23,6 +23,30 @@
       "city": "São Gabriel",
       "uf": "RS",
       "id": 2
+    },
+    {
+      "doc_name": "Documento do veiculo",
+      "type": "Pessoa fisica",
+      "cpf": "256.987.695-89",
+      "name": "Pedro Gomes",
+      "cep": "345",
+      "street": "Flores",
+      "number": "567",
+      "city": "Foz do Iguaçu",
+      "uf": "PR",
+      "id": 3
+    },
+    {
+      "doc_name": "fichario",
+      "type": "Pessoa fisica",
+      "cpf": "59595949494",
+      "name": "Fabiano",
+      "cep": "9856332",
+      "street": "Flores",
+      "number": "233",
+      "city": "Ribeirao",
+      "uf": "sp",
+      "id": 11
     }
   ]
 }

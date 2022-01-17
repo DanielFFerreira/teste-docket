@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", event => {
         }
         service.create(data).then(response => {
             list.add(response);
-            timed_class(document.querySelector(".modal"), "visible", 6000);
+            timed_class(document.querySelector(".modal"), "visible", 13000);
         }).catch(message => {
             console.error(message);
         });
