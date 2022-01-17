@@ -11,54 +11,6 @@
       "city": "Bebedouro",
       "uf": "SP",
       "id": 1
-    },
-    {
-      "doc_name": "Certidao de nascimento",
-      "type": "Pessoa juridica",
-      "cpf": "999.999.999-00",
-      "name": "Katia Fonseca",
-      "cep": "14708-228",
-      "street": "Paraguai",
-      "number": "567",
-      "city": "São Gabriel",
-      "uf": "RS",
-      "id": 2
-    },
-    {
-      "doc_name": "Documento do veiculo",
-      "type": "Pessoa fisica",
-      "cpf": "256.987.695-89",
-      "name": "Pedro Gomes",
-      "cep": "345",
-      "street": "Flores",
-      "number": "567",
-      "city": "Foz do Iguaçu",
-      "uf": "PR",
-      "id": 3
-    },
-    {
-      "doc_name": "fichario",
-      "type": "Pessoa fisica",
-      "cpf": "59595949494",
-      "name": "Fabiano",
-      "cep": "9856332",
-      "street": "Flores",
-      "number": "233",
-      "city": "Ribeirao",
-      "uf": "sp",
-      "id": 11
-    },
-    {
-      "doc_name": "fichario",
-      "type": "Pessoa fisica",
-      "cpf": "59595949494",
-      "name": "Fabiano",
-      "cep": "9856332",
-      "street": "Flores",
-      "number": "233",
-      "city": "Ribeirao",
-      "uf": "sp",
-      "id": 12
     }
   ]
 }

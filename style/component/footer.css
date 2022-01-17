@@ -16,7 +16,7 @@
   box-shadow: 0px 2px 3px #00000029;
   transform: translate(-50%, -50%);
   background-color: #00B98E;
-  /* display: none; */
+  display: none;
 }
 .modal .modal-content {
   display: flex;
@@ -31,7 +31,7 @@
   font-size: 1rem;
   margin-left: 2rem;
 }
-#modal .icon-close {
+.modal .icon-close {
  margin-left: 6rem;
 }
 
