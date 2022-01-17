@@ -15,7 +15,9 @@ Desafio para desenvolvedor front-end na Docket Brasil
 
 ### Instação
 1. Baixe ou clone o repositótio
-2. Instalar as dependências executando npm install
+2. Execute comando npm init -y para criar arquivo package.json
+3. Instale as dependências e json server com npm i json-server
+4. Rode para iniciar o scripts npm run dev
 
 ### Como usar
 1. Abra a index.html com o live server no seu VSCode
