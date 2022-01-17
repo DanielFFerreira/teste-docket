@@ -8,6 +8,7 @@ https://teste-docket-q4zgxuo0p-danielfreitasferreira.vercel.app/
 * HTML5
 * CSS3
 * Vanilla Javascript (ES6)
+* Markdown no readme
 
 ## Execulte o projeto
 * VSCode
