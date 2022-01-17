@@ -1,168 +1,160 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Daniel Freitas Ferreira">
-  <meta name="description" content="Sistema para solicitações de documentos">
-  <meta name="keywords" content="sites, documentos, socilitações">
-  <!-- Header links -->
-  <link rel="stylesheet" href="src/css/styles.css">
-  <title>Sistema de solicitações</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <script src="src/indexController.js" type="module" defer></script>
+    <style>
+        #modal {
+            position: fixed;
+            padding: 15px;
+            width: 418px;
+            height: 30px;
+            left: 50%;
+            top: 62px;
+            left: 41rem;
+            border-radius: 5px;
+            box-shadow: 0px 2px 3px #00000029;
+            transform: translate(-50%, -50%);
+            background-color: #00B98E;
+            display: none;
+        }
+        #modal .modal-content {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            top: -5px;
+            position: absolute;
+            padding: 0 1rem;
+        }
+        #modal p {
+            text-align: center;
+            color: #ffffff;
+            font-family: 'Opens sans' sans-serif;
+            font-size: 1rem;
+            margin-left: 2rem;
+        }
+        #modal .icon-close {
+           margin-left: 6rem;
+        }
+
+        .visible {
+            display: block !important;
+        }
+    </style>
 </head>
-<body>
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <img class="logo" src="./src/img/logo.svg" alt="logo docket">
-    </div>
-  </header>
-  <!-- Header fim -->
-
-  <!-- Main -->
-  <main class="main container">
-    <h1 class="title-pedido">Pedido #1</h1>
-    <!-- Registrar sessão dos cards -->
-    <section class="section-contrato">
-
-      <h2 class="subtitle-criar-doc">Lead: Documento para criar contato</h2>
-
-      <div class="observacoes">
-        <p><span >Observações:</span>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illo nam accusamus debitis maxime quae nesciunt aperiam voluptas, sequi iste accusantium voluptatum sint voluptate minus numquam consectetur voluptates possimus tempore.
-        </p>
-      </div>
-
-      <div class="informacao">
-        <p class="autor"><span>Criado por: </span>João da Silva</p>
-        <p><span>Data de criação:</span></p>
-      </div>
-
-    </section>
-
-    <div class="registro-container">
-      <section class="section-registro">
-
-        <!-- form -->
-        <form class="form">
-          <h2 class="section-title-pedido">Adicionar documentos ao pedido</h2>
-
-          <div class="divisao"></div>
-
-          <div>
-            <label>
-              <span class="required-symbol">*</span>
-              Nome do documento:
-            </label>
-            <input 
-            id="nome-documento"
-            type="text" 
-            class="border-error" 
-            placeholder="Digite o documento" 
-            pattern="[a-zA-Záãâéêíîóôõú\s]+$"
-            required
-            >
-            <small class="error-menssage">Campo obrigatório</small>
-          </div>
-
-          <div>
-            
-            <label>
-              <span class="required-symbol">*</span>
-              Tipo de documento:
-            </label>
-            <select name="type" id="type">
-              <option value="1">Pessoa Física</option>
-              <option value="1">Pessoa Jurídica</option>
-            </select>
-          </div>
-
-          <div>
-            <label>
-              <span class="required-symbol">*</span>
-              CPF:
-            </label>
-            <input type="text" class="border-error" placeholder="Digite seu cpf" required>
-            <small class="error-menssage">Campo obrigatório</small>
-          </div>
-
-          <div>
-            <label>
-              <span class="required-symbol">*</span>
-              Nome Completo:
-            </label>
-            <input type="text" class="border-error" placeholder="Digite seu nome" required>
-            <small class="error-menssage">Campo obrigatório</small>
-          </div>
-
-          <div class="dados-cartorio">
-            <p><span>Dados do cartório</span></p>
-
-            <label>
-              <span class="required-symbol">*</span>
-              CEP:
-            </label>
-            <input class="cep border-error" type="text" placeholder="Digite o cep" required>
-            <small class="error-menssage">Campo obrigatório</small>
-
-            <div class="endereco-wrapper">
-              <div>
-                <label>
-                  <span class="required-symbol">*</span>
-                  Rua:
-                </label>
-                <input class="rua border-error" type="text" placeholder="Digite a sua rua" required>
-                <small class="error-menssage">Campo obrigatório</small>
-              
-                <label>
-                  <span class="required-symbol">*</span>
-                  Cidade:
-                </label>
-                <input class="cidade border-error" type="text" placeholder="Digite a cidade" required>
-                <small class="error-menssage">Campo obrigatório</small>
-              </div>
-              <div>
-                <label>
-                  <span class="required-symbol">*</span>
-                  Número:
-                </label>
-                <input class="numero border-error" type="text" placeholder="Digite o número" required>
-                <small class="error-menssage">Campo obrigatório</small>
-
-                <label>
-                  <span class="required-symbol">*</span>
-                  UF:
-                </label>
-                <input class="uf border-error" type="text" placeholder="Digite UF" required>
-                <small class="error-menssage">Campo obrigatório</small>
-            </div>
-            </div>
-
-          </div>
-
-          <input type="submit" class="btn-documento" value="Criar documento" />
-
-        </form>
-
-      </section>
-
-      <section class="empty-container">
-        <div class="empty-content">
-          <img src="src/img/empty.svg" alt="imagem empty">
-          <p class="empty-doc">Nenhum documento criado</p>
+<body style="background-color: var(--background-color); min-height: 100vh; font-family: Open Sans, Regular;">
+    <div id="modal">
+        <div class="modal-content">
+            <img src="./asset/check.png" alt="">
+            <p>Documento cadastrado com sucesso!</p>
+            <img class="icon-close" src="./asset/close.png" alt="">
         </div>
-      </section>
     </div>
-  </main>
 
+    <header class="header">
+        <div class="container">
+            <img src="asset/logo.png" alt="">
+        </div>
+    </header>
+    
+    <h1 class="title-pedido">Pedido #1</h1>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>DOCKET &copy 2022</p>
-  </footer>
+    <main class="flex f-column gap1 px1">
+        <section class="section-information px1">
+            <h2>Lead: Documento para criar contrato</h2>
+            <p>Observação: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin commodo faucibus. Nullam ut pharetra turpis. Vestibulum molestie turpis ac tortor dapibus porttitor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam in elit vitae ligula consectetur hendrerit id id odio. Vestibulum volutpat gravida arcu sit amet tempus. In rhoncus leo vel dolor convallis gravida id a nulla.</p>
+            <footer class="flex gap3">
+                <p><strong>Criado por:</strong> João da Silva</p>
+                <p><strong>Data da criação:</strong> 11 de maio de 2021</p>
+            </footer>
+        </section>
 
-  <script src="src/js/main.js"></script>
+        <div class="flex gap1">
+            <section class="section-information w75 h-100 px1">
+                <h2 class="mb-1">Adicionar documentos ao pedido</h2>
 
+                <hr>
+
+                <form id="form" action="http://localhost:3000" method="POST" class="flex f-column gap1">
+                    <div class="flex f-column">
+                        <label for="doc_name">Nome do documento:</label>
+                        <input class="input w100" type="text" id="doc_name" name="doc_name" pattern="^\w[\w\s]*$" required>
+                    </div>
+
+                    <div class="flex f-column">
+                        <label for="type">Tipo de pessoa:</label>
+                        <select class="input input-type w75" id="type" name="type" required>
+                            <option value="Pessoa fisica" selected>Pessoa física</option>
+                            <option value="Pessoa juridica">Pessoa júridica</option>
+                        </select>
+                    </div>  
+
+                    <div class="flex f-column">
+                        <label for="cpf">CPF:</label>
+                        <input class="input w100" type="text" id="cpf" name="cpf" required>
+                    </div>
+
+                    <div class="flex f-column">
+                        <label for="name">Nome Completo:</label>
+                        <input class="input w100" type="text" id="name" name="name" required>
+                    </div>
+
+                    <h3>Dados do cartório</h3>
+
+                    <div class="flex f-column">
+                        <label for="cep">CEP:</label>
+                        <input class="input w50 input-cep" type="text" id="cep" name="cep" required>
+                    </div>
+
+                    <div class="flex gap1">
+                        <div class="flex f-column w75">
+                            <label for="street">Rua:</label>
+                            <input class="input w100" class="w100 border-box" type="text" id="street" name="street" required>
+                        </div>
+
+                        <div class="flex f-column w25">
+                            <label for="number">Número:</label>
+                            <input class="input w100" class="w100 border-box" type="text" id="number" name="number" required>
+                        </div>
+                    </div>
+
+                    <div class="flex gap1">
+                        <div class="flex f-column w75">
+                            <label for="city">Cidade:</label>
+                            <input class="input w100" class="w100 border-box" type="text" id="city" name="city" required>
+                        </div>
+
+                        <div class="flex f-column w25">
+                            <label for="uf">UF:</label>
+                            <input class="input w100" class="w100 border-box" type="text" id="uf" name="uf" required>
+                        </div>
+                    </div>
+
+                    <div class="py1">
+                        <input class="btn-documento" type="submit" value="Criar documento">
+                    </div>
+                </form>
+            </section>
+
+            <section id="list" class="flex f-column gap1 w100">
+                <article class="flex f-column justify-content-center align-items-center gap1 py2 box">
+                    Loading...
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer mt-2">
+        <p class="p1 m0">DOCKET © 2021</p>
+    </footer>
 </body>
 </html>
