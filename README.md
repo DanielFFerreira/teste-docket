@@ -35,6 +35,11 @@ npm init -y
 ```
 bash npm i json-server
 ```
+### No package.json em scripts
+
+```
+"dev": "json-server --watch bd.json --port 3000"
+```
 ### Executando Json-Server
 
 No terminal após instalar as dependências, rode: 
