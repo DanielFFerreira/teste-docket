@@ -25,7 +25,10 @@ git clone https://github.com/DanielFreitasFerreira/teste-docket.git
 ```bash 
 npm install
 ```
-
+### Instalando Json-server
+```
+bash npm i json-server
+```
 ### Executando Json-Server
 
 No terminal após instalar as dependências, rode: 
