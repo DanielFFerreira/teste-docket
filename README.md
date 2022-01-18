@@ -25,6 +25,12 @@ git clone https://github.com/DanielFreitasFerreira/teste-docket.git
 ```bash 
 npm install
 ```
+
+3. Crie seu arquivo package.json
+
+```
+npm init -y
+```
 ### Instalando Json-server
 ```
 bash npm i json-server
